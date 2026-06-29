@@ -1,0 +1,2 @@
+# starkxd
+student presonal details
