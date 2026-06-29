@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nitheswar Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- NAVBAR -->
+
+<nav>
+
+
+<h2 class="logo">
+RUBAN
+</h2>
+
+
+<div class="links">
+
+<a href="#home">Home</a>
+
+<a href="#about">About</a>
+
+<a href="#skills">Skills</a>
+
+<a href="#certificates">Certificates</a>
+
+<a href="#projects">Projects</a>
+
+<a href="#contact">Contact</a>
+
+
+</div>
+
+
+</nav>
+
+
+
+
+
+
+<!-- HOME -->
+
+
+<section class="hero" id="home">
+
+
+<div class="hero-text">
+
+
+<p class="small">
+WELCOME TO MY PORTFOLIO
+</p>
+
+
+
+<h1>
+
+Hi, I'm 
+<span>RUBAN</span>
+
+</h1>
+
+
+
+<h2>
+Developer | AI Enthusiast
+</h2>
+
+
+
+<p>
+
+I create modern websites, AI applications
+and innovative software projects.
+
+</p>
+
+
+
+<button>
+Hire Me
+</button>
+
+
+</div>
+
+
+
+
+
+<div class="circle">
+
+
+<img src="profile.jpg">
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ABOUT -->
+
+
+<section id="about">
+
+
+<h1>
+About Me
+</h1>
+
+
+
+<div class="box">
+
+
+<p>
+
+I am a passionate developer interested in
+Web Development, Artificial Intelligence
+and Machine Learning.
+
+I enjoy building creative projects
+with clean designs.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- SKILLS -->
+
+
+<section id="skills">
+
+
+<h1>
+My Skills
+</h1>
+
+
+
+<div class="skill-buttons">
+
+
+<button onclick="showSkill('html')">
+HTML
+</button>
+
+
+<button onclick="showSkill('css')">
+CSS
+</button>
+
+
+<button onclick="showSkill('python')">
+Python
+</button>
+
+
+<button onclick="showSkill('js')">
+JavaScript
+</button>
+
+
+<button onclick="showSkill('ml')">
+Machine Learning
+</button>
+
+
+<button onclick="showSkill('flask')">
+Flask
+</button>
+
+
+
+</div>
+
+
+
+
+
+<div class="skill-box" id="skillBox">
+
+
+<h2>
+Select Skill
+</h2>
+
+
+<p>
+Click a skill button to view details
+</p>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- CERTIFICATES -->
+
+
+<section id="certificates">
+
+
+<h1>
+Certificates
+</h1>
+
+
+
+<div class="projects">
+
+
+
+<div class="card">
+
+
+<h2>
+Python Certificate
+</h2>
+
+
+<p>
+
+Completed Python programming course.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+
+<h2>
+Web Development
+</h2>
+
+
+<p>
+
+HTML CSS JavaScript certification.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+
+<h2>
+Machine Learning
+</h2>
+
+
+<p>
+
+AI and ML course completion.
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- PROJECTS -->
+
+
+<section id="projects">
+
+
+<h1>
+My Projects
+</h1>
+
+
+
+<div class="projects">
+
+
+
+
+
+
+<div class="card">
+
+
+<img src="melanoma.png">
+
+
+
+<h2>
+Melanoma Detection
+</h2>
+
+
+<p>
+
+CNN based skin cancer prediction system.
+
+</p>
+
+
+
+<button onclick="openProject('melanoma')">
+
+View Project
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<img src="portfolio.png">
+
+
+
+<h2>
+Portfolio Website
+</h2>
+
+
+<p>
+
+Personal responsive portfolio website.
+
+</p>
+
+
+
+<button onclick="openProject('portfolio')">
+
+View Project
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<img src="ai.png">
+
+
+
+<h2>
+AI Project
+</h2>
+
+
+<p>
+
+Machine learning based applications.
+
+</p>
+
+
+
+<button onclick="openProject('ai')">
+
+View Project
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<!-- PROJECT POPUP -->
+
+
+<div class="popup" id="popup">
+
+
+
+<div class="popup-box">
+
+
+
+<span onclick="closeProject()">
+✖
+</span>
+
+
+
+<div id="projectDetails">
+
+
+<h2>
+Project Details
+</h2>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- CONTACT -->
+
+
+<section id="contact">
+
+
+<h1>
+Contact
+</h1>
+
+
+
+<div class="box">
+
+
+<p>
+Email : yourmail@gmail.com
+</p>
+
+
+<p>
+GitHub : github.com/yourname
+</p>
+
+
+<p>
+LinkedIn : linkedin.com/in/yourname
+</p>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<footer>
+
+
+© 2026 Nitheswar | Portfolio
+
+
+</footer>
+
+
+
+
+
+
+
+
+
+<script>
+
+
+
+// SKILLS
+
+
+function showSkill(skill){
+
+
+let box=document.getElementById("skillBox");
+
+
+
+if(skill=="html"){
+
+
+box.innerHTML=
+
+`
+<h2>HTML</h2>
+
+<p>
+Used for creating webpage structure and layouts.
+</p>
+
+`;
+
+}
+
+
+
+else if(skill=="css"){
+
+
+box.innerHTML=
+
+`
+<h2>CSS</h2>
+
+<p>
+Used for styling, animations and responsive design.
+</p>
+
+`;
+
+}
+
+
+
+
+else if(skill=="python"){
+
+
+box.innerHTML=
+
+`
+<h2>Python</h2>
+
+<p>
+Used for programming, AI and automation projects.
+</p>
+
+`;
+
+}
+
+
+
+
+else if(skill=="js"){
+
+
+box.innerHTML=
+
+`
+<h2>JavaScript</h2>
+
+<p>
+Used for interactive website features.
+</p>
+
+`;
+
+}
+
+
+
+
+else if(skill=="ml"){
+
+
+box.innerHTML=
+
+`
+<h2>Machine Learning</h2>
+
+<p>
+Building prediction models using data.
+</p>
+
+`;
+
+}
+
+
+
+
+else if(skill=="flask"){
+
+
+box.innerHTML=
+
+`
+<h2>Flask</h2>
+
+<p>
+Backend development using Python Flask.
+</p>
+
+`;
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+// PROJECT POPUP
+
+
+function openProject(project){
+
+
+let details=document.getElementById("projectDetails");
+
+
+
+if(project=="melanoma"){
+
+
+details.innerHTML=
+
+`
+
+<h2>
+Melanoma Detection
+</h2>
+
+
+<p>
+
+Technology:
+Python, TensorFlow, CNN, Flask
+
+</p>
+
+
+<p>
+
+A deep learning system that predicts skin
+lesions using image classification.
+
+</p>
+
+
+<p>
+
+Features:
+<br>
+✔ Image Upload
+<br>
+✔ AI Prediction
+<br>
+✔ Accuracy Result
+
+</p>
+
+
+`;
+
+}
+
+
+
+
+
+else if(project=="portfolio"){
+
+
+details.innerHTML=
+
+`
+
+<h2>
+Portfolio Website
+</h2>
+
+
+<p>
+
+Technology:
+HTML, CSS, JavaScript
+
+</p>
+
+
+<p>
+
+A modern personal portfolio website
+with animations and responsive design.
+
+</p>
+
+`;
+
+}
+
+
+
+
+
+else if(project=="ai"){
+
+
+details.innerHTML=
+
+`
+
+<h2>
+AI Project
+</h2>
+
+
+<p>
+
+Technology:
+Python, Machine Learning
+
+</p>
+
+
+<p>
+
+AI based applications using trained models.
+
+</p>
+
+
+`;
+
+}
+
+
+
+
+document.getElementById("popup").style.display="flex";
+
+
+}
+
+
+
+
+
+
+function closeProject(){
+
+
+document.getElementById("popup").style.display="none";
+
+
+}
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+
+</html>
